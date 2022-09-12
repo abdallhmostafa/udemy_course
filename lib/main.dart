@@ -1,4 +1,5 @@
 import 'package:abdallh_mansor_course/login_screen.dart';
+import 'package:abdallh_mansor_course/massenger_screen.dart';
 import 'package:flutter/material.dart';
 
 void main (){
@@ -18,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:LoginScreen(),
+      home:MassengerScreen(),
 
     );
   }
