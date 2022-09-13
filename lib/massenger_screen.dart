@@ -44,851 +44,139 @@ class MassengerScreen extends StatelessWidget {
       ) ,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-                decoration:BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.grey.withOpacity(0.3),
-                ) ,
-              child:Row(
-                children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-                  Text('Search',style: TextStyle(fontSize: 16),),
-                ],
-              )
-
-            ),
-            SizedBox(height: 15,),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              physics: BouncingScrollPhysics(),
-              child: Row(
-                children: [
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.only(
-                            start: 3
-                          ),
-                          child: const Text('Abdallh Mostafa',
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: const [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        const Padding(
-                          padding: EdgeInsetsDirectional.only(
-                            start: 3
-                          ),
-                          child: Text('Abdallh Mostafa',
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: const Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: const [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        const Padding(
-                          padding: EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: const Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: const [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        const Padding(
-                          padding: EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: const Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: const [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        const Padding(
-                          padding: EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: const Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-                  Container(
-                    width: 60.0,
-                    child: Column(
-                      children: [
-                        Stack(
-                          alignment: AlignmentDirectional.bottomEnd,
-                          children: const [
-                            CircleAvatar(
-                              backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                              radius: 30.0,
-                            ),
-                            // Positioned(
-                            //   bottom: 0,
-                            //   right: 0,
-                            //   child: Container(
-                            //     width: 14.0,
-                            //     height: 14.0,
-                            //     decoration: BoxDecoration(
-                            //       borderRadius:BorderRadius.circular(7.0),
-                            //         color:Colors.green
-                            //
-                            //     ),
-                            //   ),
-                            // ),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius:7.0,
-                            ),
-
-                            CircleAvatar(
-                              backgroundColor: Colors.green,
-                              radius:6.0,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 7,),
-                        const Padding(
-                          padding: EdgeInsetsDirectional.only(
-                              start: 3
-                          ),
-                          child: Text('Abdallh Mostafa',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 15),),
-                        ),
-
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 20,),
-
-
-                ],
-              ),
-            ),
-            SizedBox(height: 20.0,),
-            Expanded(
-                            child: SingleChildScrollView(
-                              physics: BouncingScrollPhysics(),
-                child: Column(
+        child:SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                  decoration:BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.grey.withOpacity(0.3),
+                  ) ,
+                child:Row(
                   children: [
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                    'How Are you Man',
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                    ),
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 2,
-                                  )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
-                    SizedBox(height: 20.0,),
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                        'How Are you Man',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
-                                      )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
-                    SizedBox(height: 20.0,),
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                        'How Are you Man',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
-                                      )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
-                    SizedBox(height: 20.0,),
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                        'How Are you Man',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
-                                      )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
-                    SizedBox(height: 20.0,),
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                        'How Are you Man',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
-                                      )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
-                    SizedBox(height: 20.0,),
-                    Row(
-                      children:    [
-                        CircleAvatar(
-                          backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
-                          radius: 30.0,
-                        ),
-                        SizedBox(width: 20.0,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start  ,
-                            children: [
-                              const Text(
-                                'Abdallh Mostafa',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 1,
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                children:  const [
-                                  Expanded(
-                                      child: Text(
-                                        'How Are you Man',
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
-                                      )
-                                  ),
-                                  SizedBox(width: 5,),
-                                  CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Colors.black87,
-                                  ),
-                                  SizedBox(width: 10,),
-                                  Text('02:30 PM',style: TextStyle(fontSize: 15),),
-
-                                ],
-                              )
-                            ],
-                          ),
-                        ) ,
-
-                      ],
-                    ),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                    Text('Search',style: TextStyle(fontSize: 16),),
                   ],
-                ),
+                )
+
               ),
-            ),
+              const SizedBox(height: 15,),
+              Container(
+                height: 110,
+                child: ListView.builder(
+                  physics: BouncingScrollPhysics(),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 7,
+                  itemBuilder:(_,index)=> BuildStoreItem(), ),
+              ),
+              const SizedBox(height: 20.0,),
+              ListView.separated(
+                separatorBuilder: (_,index)=>const SizedBox(height: 15,),
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: 20,
+                scrollDirection: Axis.vertical,
+                itemBuilder: (_,index)=>BuildChatitem() ,),
 
 
 
 
 
 
-          ],
+
+            ],
+          ),
         ),
       ),
     );
   }
 }
+Widget BuildChatitem() =>  Row(
+children:    [
+const CircleAvatar(
+backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
+radius: 30.0,
+),
+SizedBox(width: 20.0,),
+Expanded(
+child: Column(
+crossAxisAlignment: CrossAxisAlignment.start  ,
+children: [
+const Text(
+'Abdallh Mostafa',
+style: TextStyle(
+fontSize: 17,
+fontWeight: FontWeight.bold,
+),
+overflow: TextOverflow.ellipsis,
+maxLines: 1,
+),
+SizedBox(height: 5,),
+Row(
+children:  const [
+Expanded(
+child: Text(
+'How Are you Man',
+style: TextStyle(
+fontSize: 15,
+),
+overflow: TextOverflow.ellipsis,
+maxLines: 2,
+)
+),
+SizedBox(width: 5,),
+CircleAvatar(
+radius: 3,
+backgroundColor: Colors.black87,
+),
+SizedBox(width: 10,),
+Text('02:30 PM',style: TextStyle(fontSize: 15),),
+
+],
+)
+],
+),
+) ,
+
+],
+);
+
+Widget BuildStoreItem() =>  Container(
+  width: 60.0,
+  margin: EdgeInsets.symmetric(horizontal: 10),
+  child: Column(
+    children: [
+      Stack(
+        alignment: AlignmentDirectional.bottomEnd,
+        children: const [
+          CircleAvatar(
+            backgroundImage:NetworkImage('https://avatars.githubusercontent.com/u/81104114?v=4') ,
+            radius: 30.0,
+          ),
+          // ),
+          CircleAvatar(
+            backgroundColor: Colors.white,
+            radius:7.0,
+          ),
+
+          CircleAvatar(
+            backgroundColor: Colors.green,
+            radius:6.0,
+          ),
+        ],
+      ),
+      SizedBox(height: 7,),
+      Padding(
+        padding: const EdgeInsetsDirectional.only(
+            start: 3
+        ),
+        child: const Text('Abdallh Mostafa',
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(fontSize: 15),),
+      ),
+
+    ],
+  ),
+);
