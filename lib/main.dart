@@ -1,3 +1,4 @@
+import 'package:abdallh_mansor_course/counter_screen.dart';
 import 'package:abdallh_mansor_course/login_screen.dart';
 import 'package:abdallh_mansor_course/massenger_screen.dart';
 import 'package:abdallh_mansor_course/user_screen.dart';
@@ -20,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:UsersScreen(),
+      home:CounterScreen(),
 
     );
   }
